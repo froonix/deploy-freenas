@@ -68,7 +68,7 @@ session.headers.update({
 })
 if API_KEY:
   session.headers.update({
-    'Authorization': f'Bearer {API_KEY}'
+    'Authorization': 'Bearer {}'.format(API_KEY)
   })
 elif PASSWORD:
   session.auth = (USER, PASSWORD)
